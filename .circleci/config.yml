@@ -16,11 +16,12 @@ jobs:
 
     steps: 
 
-      - checkout 
+    - checkout 
 
-      - run: make deps 
-
-      - run: make test       
+    - run: make deps
+    - run: make docker_build
+    - run: make test
+    - run: make docker_push
 
 workflows: 
 
