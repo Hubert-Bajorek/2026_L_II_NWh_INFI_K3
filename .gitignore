@@ -1,3 +1,2 @@
-.venv/
-__pycache__/
+hello_world/_pycache_/
 test/__pycache__/
